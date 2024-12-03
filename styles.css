@@ -1,3 +1,25 @@
 * {
-    background-color: white;
+    background-color: #12182b;
+    font-family: 'Poppins';
+
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
 }
