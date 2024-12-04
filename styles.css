@@ -1,22 +1,40 @@
-* {
-    background-color: #12182b;
-    font-family: 'Poppins';
-
-}
-
-h1 {
-    color: white;
-}
-
-p {
-    color: white;
-}
-
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    background-color: #12182b;
+    font-family: 'Inter';
+    color: white;
+}
+
+.home-section {
+    padding: 150px 150px;
+    border-radius: 10px;
+    background-image: url('images/round.png');
+    background-size: cover; /* Scale the image */
+    background-position: center; /* Center the image */
+}
+
+.skills-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.skills-container {
+    display: flex;
+    
+}
+
+.skill img {
+    width: 100px;
+    height: 70px;
+    /* margin-bottom: 10px; */
+}
+
+.skill :hover {
+    cursor: pointer;
 }
 
 .portfolio {
