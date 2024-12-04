@@ -6,11 +6,36 @@ body {
     background-color: #12182b;
     font-family: 'Inter';
     color: white;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    /* Removes browser default settings */
+    margin: 0;
+    padding: 0;
 }
 
 .home-section {
     padding: 150px 150px;
     border-radius: 10px;
+    width: 50%;
+    text-align: justify;
     background-image: url('images/round.png');
     background-size: cover; /* Scale the image */
     background-position: center; /* Center the image */
