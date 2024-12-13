@@ -42,9 +42,20 @@ nav {
 
 .link a {
     position: relative;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .link a::after {
     content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: lightblue;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 75%;
 }
