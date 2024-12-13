@@ -1,68 +1,50 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #12182b;
-    font-family: 'Inter';
-    color: white;
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #12182b;
+    color: #fff;
 }
 
 a {
-    color: white;
     text-decoration: none;
+    color: #fff;
 }
 
-.header {
+nav {
+    max-width: 1700px;
+    margin: auto;
+    padding: 2rem 1rem;
     display: flex;
-    width: 50%;
+    align-items: center;
     justify-content: space-between;
-    padding: 20px 20px;
+    gap: 2rem;
 }
 
-.navbar ul {
+.nav-logo {
+    width: 100%;
+    max-width: 100px;
     display: flex;
-    gap: 10px;
-    list-style-type: none;
-    /* Removes browser default settings */
-    margin: 0;
-    padding: 0;
 }
 
-.home-section {
-    padding: 150px 150px;
-    border-radius: 10px;
-    width: 50%;
-    text-align: justify;
-    background-image: url('images/round.png');
-    background-size: cover; /* Scale the image */
-    background-position: center; /* Center the image */
+.nav-links {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   gap: 2rem;
 }
 
-.skills-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #fff;
+.link a {
+    position: relative;
+    padding-bottom: 1rem;
 }
 
-.skills-container {
-    display: flex;
-    
-}
-
-.skill img {
-    width: 100px;
-    height: 70px;
-    /* margin-bottom: 10px; */
-}
-
-.skill :hover {
-    cursor: pointer;
-}
-
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
+.link a::after {
+    content: "";
 }
