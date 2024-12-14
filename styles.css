@@ -12,6 +12,8 @@ body {
     color: #fff;
 }
 
+/* 1) Navbar */
+
 a {
     text-decoration: none;
     color: #fff;
@@ -58,4 +60,56 @@ nav {
 
 .link a:hover::after {
     width: 75%;
+}
+
+/* 2) Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+}
+
+header .content h1 {
+    padding-bottom: 3rem;
+}
+
+header .content p {
+    padding-bottom: 2rem;
+}
+
+header .content button {
+    padding: 10px;
+    margin: 0;
+}
+
+header .content button:hover {
+    cursor: pointer;
+}
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    padding: 2rem 5rem;
+}
+
+.skills-container img {
+    max-width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.skills-container img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+
+footer p{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
 }
