@@ -26,13 +26,20 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-weight: bold;
     gap: 2rem;
 }
 
-.nav-logo {
+.nav-logo a {
     width: 100%;
-    max-width: 100px;
-    display: flex;
+    max-width: 200px;
+    display: inline-block;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo a:hover {
+    transform: scale(1.05);
 }
 
 .nav-links {
@@ -72,7 +79,7 @@ header {
 }
 
 header .content h1 {
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
 }
 
 header .content h3 {
