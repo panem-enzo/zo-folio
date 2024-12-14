@@ -12,7 +12,7 @@ body {
     color: #fff;
 }
 
-/* 1) Navbar */
+/* SECTION 1: Navbar */
 
 a {
     text-decoration: none;
@@ -20,9 +20,9 @@ a {
 }
 
 nav {
-    max-width: 1700px;
+    max-width: 100%;
     margin: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,10 +51,10 @@ nav {
     content: "";
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 3px;
     bottom: 0;
     left: 0;
-    background-color: lightblue;
+    background-color: #a788f7;
     transition: all 0.3s ease;
 }
 
@@ -62,7 +62,7 @@ nav {
     width: 75%;
 }
 
-/* 2) Header */
+/* SECTION 2: Header */
 
 header {
     display: flex;
@@ -75,23 +75,38 @@ header .content h1 {
     padding-bottom: 3rem;
 }
 
-header .content p {
-    padding-bottom: 2rem;
+header .content h3 {
+    padding-bottom: 0.5rem;
 }
 
-header .content button {
+header .content h1 span {
+    color: transparent;
+    -webkit-text-stroke: 1px #a788f7;
+}
+
+header .content h3 span {
+    color: #a788f7;
+}
+
+/* Button */
+
+header .content .btn {
+    padding-top: 2rem;
+}
+
+header .content .btn button {
     padding: 10px;
-    margin: 0;
 }
 
 header .content button:hover {
     cursor: pointer;
 }
 
-/* Skills */
+/* SECTION 3: Skills */
 
 .skills-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem; 
     padding: 2rem 5rem;
