@@ -12,6 +12,11 @@ body {
     color: #fff;
 }
 
+/* Hide Scrollbar */
+body::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome, Edge, and Safari */
+}
+
 /* SECTION 1: Navbar */
 
 a {
@@ -75,14 +80,35 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem 2rem;
+    flex-direction: column;
+    padding: 0rem 2rem;
+}
+
+header .background {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding-bottom: 3rem;
+    column-gap: 2rem;
+}
+
+header .background img {
+    display: flex;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+header .background img:hover {
+    transform: translateY(-0.5rem);
 }
 
 header .content h1 {
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
-header .content h3 {
+header .content h4 {
     padding-bottom: 0.5rem;
 }
 
@@ -91,14 +117,14 @@ header .content h1 span {
     -webkit-text-stroke: 1px #a788f7;
 }
 
-header .content h3 span {
+header .content h4 span {
     color: #a788f7;
 }
 
 /* Button */
 
 header .content .btn {
-    padding-top: 2rem;
+    padding: 2rem 0rem;
 }
 
 header .content .btn button {
@@ -119,7 +145,8 @@ header .content button:hover {
 
 .skills-container {
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 2rem; 
     padding: 2rem 5rem;
@@ -131,7 +158,7 @@ header .content button:hover {
 }
 
 .skills-container img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* Footer */
