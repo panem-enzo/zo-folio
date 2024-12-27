@@ -169,7 +169,52 @@ header .content button:hover {
     transform: scale(1.2);
 }
 
+/* SECTION 4: Portfolio */
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#portfolio .title {
+    width: 100%;
+    text-align: center;
+    padding: 4rem 2rem;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #a788f7, rgb(66, 64, 241));
+    transition: background-image 0.9s ease;
+}
+
+#portfolio .card {
+    display: flex;
+    max-width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease;
+    background-color: lightgray;
+}
+
+#portfolio .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#portfolio .card img {
+    max-width: 50%;
+}
+
+#portfolio .card .container {
+    padding: 2rem;
+    background-color: white;
+    color: #12182b;
+}
+
 /* LAST SECTION: Footer */
+
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
 
 footer .links {
     display: flex;
@@ -189,5 +234,4 @@ footer img:hover {
 footer p{
     display: flex;
     justify-content: center;
-    /* padding: 5rem; */
 }
