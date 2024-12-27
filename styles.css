@@ -169,41 +169,41 @@ header .content button:hover {
     transform: scale(1.2);
 }
 
-/* SECTION 4: Portfolio */
+/* SECTION 4: Projects */
 
-#portfolio {
+#projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
 }
 
-#portfolio .title {
+#projects .title {
     width: 100%;
     text-align: center;
     padding: 4rem 2rem;
     font-size: 2rem;
     background-image: linear-gradient(to right, #a788f7, rgb(66, 64, 241));
-    transition: background-image 0.9s ease;
 }
 
-#portfolio .card {
+#projects .card {
     display: flex;
     max-width: 75%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
     background-color: lightgray;
 }
 
-#portfolio .card:hover {
+#projects .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-#portfolio .card img {
+#projects .card img {
     max-width: 50%;
+    cursor: pointer;
 }
 
-#portfolio .card .container {
+#projects .card .container {
     padding: 2rem;
     background-color: white;
     color: #12182b;
