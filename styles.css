@@ -191,7 +191,7 @@ header .content button:hover {
 #projects .title {
     width: 100%;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 3.5rem 2rem;
     font-size: 2rem;
     background-image: linear-gradient(to right, #a788f7, #4240f1);
 }
@@ -291,6 +291,7 @@ header .content button:hover {
     display: flex;
     align-items: center;
     padding: 0.75rem 2rem;
+    margin-bottom: 2rem;
     font-size: 1rem;
     gap: 0.25rem;
     color: #fff;
@@ -311,16 +312,12 @@ header .content button:hover {
     filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(312deg) brightness(102%) contrast(101%);
 }
 
-@media (max-width: 80vw) {
-    .contact-input {
-        width: 80vw;
-    }
-}
-
 /* LAST SECTION: Footer */
 
 footer {
-    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    background: linear-gradient(#12182b, #242f55);
 }
 
 footer .links {
