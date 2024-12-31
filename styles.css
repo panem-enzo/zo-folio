@@ -43,8 +43,8 @@ nav {
     width: 100%;
     max-width: 200px;
     display: inline-block;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.75rem;
+    font-weight: 600;
     transition: transform 0.3s ease;
 }
 
@@ -57,6 +57,8 @@ nav {
    display: flex;
    align-items: center;
    gap: 2rem;
+   font-size: 1.25rem;
+   font-weight: 500;
 }
 
 .link a {
@@ -130,23 +132,30 @@ header .content h3 span {
 /* Button */
 
 header .content .btn {
-    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2rem;
 }
 
 header .content .btn button {
     /* Override some default settings */
-    padding: 10px;
+    padding: 1rem;
     color: #fff;
     background-color: #a788f7;
-    border-radius: 5px;
+    border: solid;
+    border-radius: 20px;
+    border-color: transparent;
     font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
+    font-weight: bolder;
+    transition: all 0.2s ease;
 }
 
 header .content button:hover {
     cursor: pointer;
-    background-color: #9772f5;
-    transform: scale(1.05);
+    background-color: #fff;
+    color: #4240f1;
+    border-color: #4240f1;
 }
 
 /* SECTION 3: Skills */
@@ -158,6 +167,7 @@ header .content button:hover {
     flex-wrap: wrap;
     gap: 2rem; 
     padding: 5rem 5rem;
+    background: linear-gradient(#12182b, #242f55);
 }
 
 .skills-container img {
@@ -169,51 +179,148 @@ header .content button:hover {
     transform: scale(1.2);
 }
 
-/* SECTION 4: Portfolio */
+/* SECTION 4: Projects */
 
-#portfolio {
+#projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
-#portfolio .title {
+#projects .title {
     width: 100%;
     text-align: center;
     padding: 4rem 2rem;
     font-size: 2rem;
-    background-image: linear-gradient(to right, #a788f7, rgb(66, 64, 241));
-    transition: background-image 0.9s ease;
+    background-image: linear-gradient(to right, #a788f7, #4240f1);
 }
 
-#portfolio .card {
+#projects .card {
     display: flex;
-    max-width: 75%;
+    /* width: 70vw; */
+    max-width: 70vw;
+    border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: box-shadow 0.3s ease;
-    background-color: lightgray;
+    transition: box-shadow 0.5s ease;
 }
 
-#portfolio .card:hover {
+#projects .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
-#portfolio .card img {
+#projects .card img {
     max-width: 50%;
+    border-radius: 20px 0px 0px 20px;
 }
 
-#portfolio .card .container {
+#projects .card .container {
     padding: 2rem;
     background-color: white;
     color: #12182b;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* SECTION 5: Contact */
+
+.contact-container {
+    display: flex;
+    /* height: 100vh; */
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 10rem;
+    padding-top: 5rem;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left .title h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    /* margin-bottom: 0.25rem; */
+}
+
+.contact-left .title hr {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    color: #a788f7;
+    margin-bottom: 1rem;
+
+}
+
+.contact-left button img {
+    max-width: 2rem;
+}
+
+.contact-input {
+    height: 3rem;
+    width: 15vw;
+    outline: none;
+    border: solid;
+    border-color: transparent;
+    padding-left: 1rem;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.contact-left textarea {
+    resize: none;
+    height: 20vh;
+    padding-top: 0.75rem;
+    padding-right: 1rem;
+}
+
+.contact-input:focus {
+    border: 2px solid #a788f7;
+}
+
+/* Styles the placeholder text of <input> or <textarea> */
+.contact-input::placeholder {
+    color: gray;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    gap: 0.25rem;
+    color: #fff;
+    background-color: #a788f7;
+    border-radius: 30px;
+    border-color: transparent;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.contact-left button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #9377d8;
+}
+
+.contact-left button img {
+    filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(312deg) brightness(102%) contrast(101%);
+}
+
+@media (max-width: 80vw) {
+    .contact-input {
+        width: 80vw;
+    }
 }
 
 /* LAST SECTION: Footer */
 
-.footer {
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
+footer {
+    margin-bottom: 1rem;
 }
 
 footer .links {
@@ -231,7 +338,13 @@ footer img:hover {
     cursor: pointer;
 }
 
-footer p{
+footer p {
     display: flex;
     justify-content: center;
+}
+
+/* CSS filter generator to convert from black to target hex color
+ -> https://isotropic.co/tool/hex-color-to-css-filter/ */
+footer .footer-logo:hover {
+    filter: invert(50%) sepia(69%) saturate(885%) hue-rotate(217deg) brightness(104%) contrast(94%);
 }
