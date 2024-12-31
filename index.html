@@ -112,14 +112,19 @@
 
     <section id="contact" class="contact-section">
         <div class="contact-container">
-            <form action="">
+            <form action="" class="contact-left">
                 <div class="title">
-                    <h1>Get in touch</h1>
+                    <h1>Contact Me</h1>
                     <hr>
                 </div>
                 <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
-                <input type="email">
+                <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+                <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+                <button type="submit">Submit <img src="images/arrow-sm-right-svgrepo-com.svg" alt="Arrow-Right"></button>
             </form>
+            <div class="contact-right">
+                <img src="/images/undraw_quick-chat_3gj8.svg" alt="Contact-Right">
+            </div>
         </div>
     </section>
 
