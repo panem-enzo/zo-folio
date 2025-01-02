@@ -229,8 +229,9 @@ header .content button:hover {
     /* height: 100vh; */
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 10rem;
+    padding: 0 8rem;
     padding-top: 5rem;
+    gap: 2rem;
 }
 
 .contact-left {
@@ -261,7 +262,7 @@ header .content button:hover {
 
 .contact-input {
     height: 3rem;
-    width: 15vw;
+    min-width: 20vw;
     outline: none;
     border: solid;
     border-color: transparent;
@@ -310,6 +311,19 @@ header .content button:hover {
 
 .contact-left button img {
     filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(312deg) brightness(102%) contrast(101%);
+}
+
+.contact-right img {
+    max-width: 50vw;
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-container {
+        flex-wrap: wrap;
+    }
+    .contact-input {
+        min-width: 50vw;
+    }
 }
 
 /* LAST SECTION: Footer */
