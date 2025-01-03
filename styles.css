@@ -201,13 +201,12 @@ header .content button:hover {
     /* width: 70vw; */
     max-width: 70vw;
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition: box-shadow 0.5s ease;
 }
 
 #projects .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    cursor: pointer;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
 
 #projects .card img {
@@ -220,6 +219,18 @@ header .content button:hover {
     background-color: white;
     color: #12182b;
     border-radius: 0px 20px 20px 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #projects .card {
+        flex-direction: column;
+    }
+    #projects .card img {
+        border-radius: 20px 0px 0px 0px;
+    }
+    #projects .card .container {
+        border-radius: 0px 0px 20px 20px;
+    }
 }
 
 /* SECTION 5: Contact */
@@ -317,10 +328,15 @@ header .content button:hover {
     max-width: 50vw;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     .contact-container {
         flex-wrap: wrap;
     }
+
+    .contact-left {
+        align-items: center;
+    }
+
     .contact-input {
         min-width: 50vw;
     }
