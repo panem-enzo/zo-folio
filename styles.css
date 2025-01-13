@@ -21,6 +21,24 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.section-title {
+    margin: 4rem auto;
+    font-size: 2rem;
+    width: fit-content;
+    text-align: center;
+}
+
+.section-title h1 {
+    text-align: center;
+}
+
+.section-title hr {
+    border: 2px solid #a788f7;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* SECTION: Navbar */
 
 a {
@@ -160,24 +178,6 @@ header .content button:hover {
 
 /* SECTION: About Me */
 
-.about-me-title {
-    margin: 4rem 0rem;
-    font-size: 2rem;
-}
-
-.about-me-title h1 {
-    display: flex;
-    justify-content: center;
-}
-
-.about-me-title hr {
-    border: 2px solid #a788f7;
-    border-radius: 10px;
-    width: 15rem;
-    text-align: center;
-    margin: auto;
-}
-
 .about-me-container {
     display: flex;
     padding: 0rem 6rem;
@@ -241,7 +241,8 @@ header .content button:hover {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 2rem; 
-    padding: 5rem 5rem;
+    padding: 0rem 5rem;
+    padding-bottom: 5rem;
     background: linear-gradient(#12182b, #242f55);
 }
 
