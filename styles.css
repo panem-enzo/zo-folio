@@ -39,6 +39,14 @@ body::-webkit-scrollbar {
     margin: 0 auto;
 }
 
+.section-title-pad {
+    width: 100%;
+    text-align: center;
+    padding: 3.5rem 2rem;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #a788f7, #4240f1);
+}
+
 /* SECTION: Navbar */
 
 a {
@@ -255,6 +263,12 @@ header .content button:hover {
     transform: scale(1.2);
 }
 
+/* SECTION: Experience */
+.experience-container {
+    height: 50vh;
+    background: linear-gradient(#12182b, #242f55);
+}
+
 /* SECTION: Projects */
 
 #projects {
@@ -262,14 +276,6 @@ header .content button:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
-}
-
-#projects .title {
-    width: 100%;
-    text-align: center;
-    padding: 3.5rem 2rem;
-    font-size: 2rem;
-    background-image: linear-gradient(to right, #a788f7, #4240f1);
 }
 
 #projects .card {
