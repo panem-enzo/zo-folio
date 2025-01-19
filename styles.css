@@ -123,7 +123,8 @@ header .background {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
     column-gap: 2rem;
 }
 
