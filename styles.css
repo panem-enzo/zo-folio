@@ -240,7 +240,7 @@ header .content button:hover {
     filter: invert(50%) sepia(69%) saturate(885%) hue-rotate(217deg) brightness(104%) contrast(94%);
 }.about-me-left img {
     max-width: 500px;
-    border-radius 50px;
+    border-radius: 50px;
 }
 
 /* SECTION: Skills */
@@ -288,6 +288,9 @@ header .content button:hover {
 .experience-container .card:hover {
     background-color: rgba(128, 128, 128, 0.075);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.experience-container .card:hover .card-right h3 {
     color:#a788f7;
 }
 
@@ -299,6 +302,10 @@ header .content button:hover {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.experience-container .card-right p {
+    color: rgba(255, 255, 255, 0.856);
 }
 
 /* SECTION: Projects */
