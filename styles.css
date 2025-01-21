@@ -163,6 +163,7 @@ header .content .btn {
     flex-direction: row;
     justify-content: center;
     padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 header .content .btn button {
@@ -239,7 +240,7 @@ header .content button:hover {
     filter: invert(50%) sepia(69%) saturate(885%) hue-rotate(217deg) brightness(104%) contrast(94%);
 }.about-me-left img {
     max-width: 500px;
-    border-radius: 50px;
+    border-radius 50px;
 }
 
 /* SECTION: Skills */
@@ -266,8 +267,38 @@ header .content button:hover {
 
 /* SECTION: Experience */
 .experience-container {
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
     background: linear-gradient(#12182b, #242f55);
+}
+
+.experience-container .card {
+    display: flex;
+    height: 30vh;
+    width: 45vw;
+    padding: 1rem;
+    gap: 3rem;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.experience-container .card:hover {
+    background-color: rgba(128, 128, 128, 0.075);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    color:#a788f7;
+}
+
+.experience-container .card-left span {
+    color: rgba(255, 255, 255, 0.452);
+}
+
+.experience-container .card-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* SECTION: Projects */
