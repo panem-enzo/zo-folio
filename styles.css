@@ -270,16 +270,15 @@ header .content button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 5rem 0rem;
     gap: 2rem;
     background: linear-gradient(#12182b, #242f55);
 }
 
 .experience-container .card {
     display: flex;
-    height: 30vh;
-    width: 45vw;
-    padding: 1rem;
+    max-width: 60vw;
+    padding: 1.5rem 1rem;
     gap: 3rem;
     border-radius: 20px;
     transition: all 0.2s ease;
@@ -287,7 +286,7 @@ header .content button:hover {
 
 .experience-container .card:hover {
     background-color: rgba(128, 128, 128, 0.075);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.13);
 }
 
 .experience-container .card:hover .card-right h3 {
@@ -295,7 +294,9 @@ header .content button:hover {
 }
 
 .experience-container .card-left span {
+    font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.452);
+    white-space: nowrap;
 }
 
 .experience-container .card-right {
@@ -306,6 +307,20 @@ header .content button:hover {
 
 .experience-container .card-right p {
     color: rgba(255, 255, 255, 0.856);
+}
+
+.experience-container .experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-container .experience-skills .skill {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #a788f7;
+    background-color: #9277d834;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.274);
 }
 
 /* SECTION: Projects */
