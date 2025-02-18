@@ -10,6 +10,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: 400;
     background-color: #12182b;
     color: #fff;
     /* Disables highlighting of text */
@@ -139,17 +141,18 @@ header .background img:hover {
 }
 
 header .content h1 {
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     font-size: 4rem;
+    font-weight: 500;
 }
 
 header .content h1 span {
-    color: transparent;
-    -webkit-text-stroke: 1px #a788f7;
+    color:#a788f7
 }
 
 header .content h3 {
     padding-bottom: 0.5rem;
+    font-weight: 400;
 }
 
 header .content h3 span {
@@ -175,7 +178,7 @@ header .content .btn button {
     border-radius: 20px;
     border-color: transparent;
     font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
+    font-weight: 600;
     transition: all 0.2s ease;
 }
 
@@ -204,6 +207,7 @@ header .content button:hover {
 .about-me-left img {
     max-width: 500px;
     border-radius: 50px;
+    background-color:#a788f7;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -228,7 +232,14 @@ header .content button:hover {
 
 .about-me-right .content .links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    /* gap: 6rem; */
+}
+
+.about-me-right .content a {
+    max-width: 3rem;
+    height: 100%;
+    margin: 0rem 4rem;
 }
 
 .about-me-right .content img {
@@ -512,3 +523,77 @@ footer p {
 footer .footer-logo:hover {
     filter: invert(50%) sepia(69%) saturate(885%) hue-rotate(217deg) brightness(104%) contrast(94%);
 }
+
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .hamburger .bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Mobile Navigation */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 70%;
+      background-color: #12182b;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 9;
+    }
+  
+    .nav-links.active {
+      transform: translateX(0);
+    }
+  
+    .link a {
+      font-size: 1.5rem;
+      padding: 1rem 0;
+    }
+  }
+  
+  /* Hamburger Menu Animation */
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
